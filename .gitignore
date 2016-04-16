@@ -61,3 +61,14 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
+
+*.DS_Store
+*.o
+*.so
+*.swiftmodule
+PerfectLibraries/
+SQLiteDBs/
+*.sock
+*.pid
+*.pem
+
