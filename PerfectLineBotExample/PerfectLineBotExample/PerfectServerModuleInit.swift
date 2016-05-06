@@ -41,7 +41,7 @@ class CallbackHandler: RequestHandler {
         
         
         print("hmacDigest : \(request.postBodyString.hmacSHA256(key: Config.channelSecret))")
-        print("hmacDigest : \(String.hmacSHA256(UTF8Encoding.decode(Config.channelSecret), message: request.postBodyBytes))")
+        print("hmacDigest : \(String.base64encode(String.hmacSHA256(UTF8Encoding.decode(Config.channelSecret), message: request.postBodyBytes)))")
 
         
     }
