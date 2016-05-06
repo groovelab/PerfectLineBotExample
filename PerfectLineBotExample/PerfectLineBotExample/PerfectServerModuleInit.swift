@@ -33,11 +33,15 @@ class CallbackHandler: RequestHandler {
         }
         
         print("headers", request.headers)
+        
+        print("postBodyBytes", request.postBodyBytes)
+        
         print("postBodyString", request.postBodyString)
         print("params", request.params())
         
         
         print("hmacDigest : \(request.postBodyString.hmacSHA256(key: Config.channelSecret))")
+        print("hmacDigest : \(String.hmacSHA256(UTF8Encoding.decode(Config.channelSecret), message: request.postBodyBytes))")
 
         
     }
