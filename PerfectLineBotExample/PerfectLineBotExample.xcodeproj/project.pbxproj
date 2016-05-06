@@ -12,6 +12,8 @@
 		0A0949AC1CC204270086F05C /* PerfectLineBotExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0949AB1CC204270086F05C /* PerfectLineBotExampleTests.swift */; };
 		0A0949B71CC2048E0086F05C /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0949B61CC2048E0086F05C /* PerfectLib.framework */; };
 		0A0949BA1CC205500086F05C /* PerfectServerModuleInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0949B91CC205500086F05C /* PerfectServerModuleInit.swift */; };
+		0AEDE78D1CDD491100533E41 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE78C1CDD491100533E41 /* Config.swift */; };
+		0AEDE78F1CDD499500533E41 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE78E1CDD499500533E41 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		0A0949AD1CC204270086F05C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A0949B61CC2048E0086F05C /* PerfectLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PerfectLib.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PerfectLineBotExample-etkfagwztjgklidfnwxzaoulojhy/Build/Products/Debug/PerfectLib.framework"; sourceTree = "<group>"; };
 		0A0949B91CC205500086F05C /* PerfectServerModuleInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectServerModuleInit.swift; sourceTree = "<group>"; };
+		0AEDE78C1CDD491100533E41 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0AEDE78E1CDD499500533E41 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				0A0949B91CC205500086F05C /* PerfectServerModuleInit.swift */,
+				0AEDE78C1CDD491100533E41 /* Config.swift */,
+				0AEDE78E1CDD499500533E41 /* Extension.swift */,
 				0A0949BC1CC20D610086F05C /* webroot */,
 				0A09499F1CC204270086F05C /* PerfectLineBotExample.h */,
 				0A0949A11CC204270086F05C /* Info.plist */,
@@ -217,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEDE78F1CDD499500533E41 /* Extension.swift in Sources */,
 				0A0949BA1CC205500086F05C /* PerfectServerModuleInit.swift in Sources */,
+				0AEDE78D1CDD491100533E41 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +420,7 @@
 				0A0949B21CC204270086F05C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0949B31CC204270086F05C /* Build configuration list for PBXNativeTarget "PerfectLineBotExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				0A0949B51CC204270086F05C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

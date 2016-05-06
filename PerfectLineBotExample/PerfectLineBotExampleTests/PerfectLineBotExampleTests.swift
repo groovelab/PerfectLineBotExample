@@ -21,16 +21,11 @@ class PerfectLineBotExampleTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testHmacSHA256() {
+        let key = "Password"
+        let message = "Filename"
+        let digest = message.hmacSHA256(key: key)
+        XCTAssertEqual(digest, "X+KuBv+YKLM/4wRUUomj9ZC/2UjKmrcxyYA3mZLvQfE=")
     }
     
 }
