@@ -122,7 +122,6 @@ class CallbackHandler: RequestHandler {
             "content": content
         ]
         let encoded = try! values.jsonEncodedString()
-        print(encoded)
         let byteArray = UTF8Encoding.decode(encoded)
         curl.setOption(CURLOPT_POSTFIELDS, v: UnsafeMutablePointer<UInt8>(byteArray))
         curl.setOption(CURLOPT_POSTFIELDSIZE, int: byteArray.count)
