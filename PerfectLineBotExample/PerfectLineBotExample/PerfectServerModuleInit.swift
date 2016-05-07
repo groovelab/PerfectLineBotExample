@@ -116,7 +116,7 @@ class CallbackHandler: RequestHandler {
         ]
     
         let values: [String: JSONValue] = [
-            "to": mids,
+            "to": mids.map {$0} as [JSONValue],
             "toChannel": 1383378250,
             "eventType": "138311608800106203",
             "content": content
