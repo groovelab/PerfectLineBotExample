@@ -10,4 +10,5 @@ class Config {
     //  FIXME: edit your LINE channel setting
     static let channelId = ""
     static let channelSecret = ""
+    static let channelMid = ""
 }
