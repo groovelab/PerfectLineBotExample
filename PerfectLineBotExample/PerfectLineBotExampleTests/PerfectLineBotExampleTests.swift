@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import PerfectLineBotExample
+import PerfectLib
 
 class PerfectLineBotExampleTests: XCTestCase {
     
@@ -22,10 +23,13 @@ class PerfectLineBotExampleTests: XCTestCase {
     }
     
     func testHmacSHA256() {
-        let key = "Password"
-        let message = "Filename"
-        let digest = message.hmacSHA256(key: key)
-        XCTAssertEqual(digest, "X+KuBv+YKLM/4wRUUomj9ZC/2UjKmrcxyYA3mZLvQfE=")
+        XCTAssertEqual("Filename".hmacSHA256(key: "Password"), "X+KuBv+YKLM/4wRUUomj9ZC/2UjKmrcxyYA3mZLvQfE=")
+        XCTAssertEqual("Message".hmacSHA256(key: "secret"), "qnR8UCqJggD55PohusaBNviGoOJ67HC6Btry4qXLVZc=")
+
+        let file = File("Resources/requestBody.json")
+        XCTAssert(file.exists())
+        try! file.openRead()
+        let requestBodyJson = try! file.readString()
+        XCTAssertEqual(requestBodyJson.hmacSHA256(key: "testsecret"), "kPXp0nPWSzfWAapWHiesbcztpKnXJoX8krCa1CcTghk=")
     }
-    
 }

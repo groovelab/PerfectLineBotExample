@@ -26,23 +26,12 @@ public func PerfectServerModuleInit() {
 //  MARK: - callback
 class CallbackHandler: RequestHandler {
     func handleRequest(request: WebRequest, response: WebResponse) {
-        print(request)
-        print(response)
         defer {
             response.requestCompletedCallback()
         }
         
         print("headers", request.headers)
-        
-        print("postBodyBytes", request.postBodyBytes)
-        
         print("postBodyString", request.postBodyString)
-        print("params", request.params())
-        
-        
         print("hmacDigest : \(request.postBodyString.hmacSHA256(key: Config.channelSecret))")
-        print("hmacDigest : \(String.base64encode(String.hmacSHA256(UTF8Encoding.decode(Config.channelSecret), message: request.postBodyBytes)))")
-
-        
     }
 }

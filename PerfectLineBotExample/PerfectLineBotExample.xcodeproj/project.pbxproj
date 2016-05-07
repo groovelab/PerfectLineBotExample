@@ -14,6 +14,8 @@
 		0A0949BA1CC205500086F05C /* PerfectServerModuleInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0949B91CC205500086F05C /* PerfectServerModuleInit.swift */; };
 		0AEDE78D1CDD491100533E41 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE78C1CDD491100533E41 /* Config.swift */; };
 		0AEDE78F1CDD499500533E41 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDE78E1CDD499500533E41 /* Extension.swift */; };
+		0AEDE7A11CDDE88900533E41 /* requestBody.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AEDE7A01CDDE88900533E41 /* requestBody.json */; };
+		0AEDE7A21CDDE8A700533E41 /* requestBody.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AEDE7A01CDDE88900533E41 /* requestBody.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0AEDE7971CDDE7CA00533E41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Resources;
+			dstSubfolderSpec = 16;
+			files = (
+				0AEDE7A21CDDE8A700533E41 /* requestBody.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A09499C1CC204270086F05C /* PerfectLineBotExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PerfectLineBotExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A09499F1CC204270086F05C /* PerfectLineBotExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerfectLineBotExample.h; sourceTree = "<group>"; };
@@ -37,6 +52,7 @@
 		0A0949B91CC205500086F05C /* PerfectServerModuleInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectServerModuleInit.swift; sourceTree = "<group>"; };
 		0AEDE78C1CDD491100533E41 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		0AEDE78E1CDD499500533E41 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		0AEDE7A01CDDE88900533E41 /* requestBody.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = requestBody.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0949AB1CC204270086F05C /* PerfectLineBotExampleTests.swift */,
+				0AEDE79F1CDDE88900533E41 /* Resources */,
 				0A0949AD1CC204270086F05C /* Info.plist */,
 			);
 			path = PerfectLineBotExampleTests;
@@ -113,6 +130,14 @@
 			children = (
 			);
 			path = webroot;
+			sourceTree = "<group>";
+		};
+		0AEDE79F1CDDE88900533E41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AEDE7A01CDDE88900533E41 /* requestBody.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +179,7 @@
 				0A0949A21CC204270086F05C /* Sources */,
 				0A0949A31CC204270086F05C /* Frameworks */,
 				0A0949A41CC204270086F05C /* Resources */,
+				0AEDE7971CDDE7CA00533E41 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEDE7A11CDDE88900533E41 /* requestBody.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = asia.groovebab.PerfectLineBotExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -376,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = asia.groovebab.PerfectLineBotExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
